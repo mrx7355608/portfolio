@@ -141,6 +141,24 @@ header {
   box-shadow: 0 0 5px 1px var(--foreground-color);
 }
 
-/*  SKILLS  */
+/* ######################################## */
+
+/*  ABOUT  */
+#about {
+  background: var(--foreground-color);
+  text-align: center;
+  color: var(--contrast-color);
+  padding: 50px;
+}
+#about h1 {
+  font-size: 2.3rem;
+}
+#about p {
+  font-size: 1.1rem;
+  width: 60vw;
+  margin: 20px auto;
+}
+
+/*  SKILLS */
 /*  PROJECTS  */
 /*  FOOTER  */
