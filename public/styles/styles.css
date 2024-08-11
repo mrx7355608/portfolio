@@ -46,7 +46,7 @@ header {
 
 .navbar .logo a {
   color: var(--foreground-color);
-  font-size: 30px;
+  font-size: 2.4rem;
   font-style: italic;
   text-decoration: none;
 }
@@ -68,22 +68,23 @@ header {
 }
 
 .download-resume-button {
-  background: #0a0a0a;
-  border-radius: 99px;
-  border: 2px solid var(--foreground-color);
-  outline: none;
-  padding: 0.4rem 1.5rem;
-  color: whitesmoke;
-  transition: 0.2s ease-out;
-}
-.download-resume-button > div {
   display: flex;
   align-items: center;
   gap: 5px;
+
+  color: whitesmoke;
+  background: #0a0a0a;
   font-weight: 500;
+  padding: 0.4rem 1rem;
+
+  border-radius: 99px;
+  border: 2px solid var(--foreground-color);
+  outline: none;
+
+  transition: 0.2s ease-out;
 }
 .download-resume-button:hover {
-  box-shadow: 0 0 9px 2px var(--foreground-color);
+  box-shadow: 0 0 7px 1px var(--foreground-color);
   cursor: pointer;
 }
 
@@ -91,7 +92,53 @@ header {
 
 /*  HERO  */
 #intro {
-  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100vh;
+}
+#intro h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+#intro h1.name {
+  color: var(--foreground-color);
+  margin-bottom: -15px;
+  font-size: 3.5rem;
+}
+#intro .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  margin-top: 3rem;
+}
+#intro .contact-info > img {
+  width: 25px;
+}
+#intro #download-resume-button-2 {
+  background: var(--foreground-color);
+  border: none;
+  outline: none;
+  border-radius: 99px;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  color: var(--contrast-color);
+  transition: 0.1s ease-in;
+
+  cursor: pointer;
+}
+#intro #download-resume-button-2:hover {
+  box-shadow: 0 0 5px 1px var(--foreground-color);
 }
 
 /*  SKILLS  */
