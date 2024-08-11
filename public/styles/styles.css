@@ -30,6 +30,7 @@ header {
     padding: 1rem 5rem;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
+    z-index: 2;
 
     display: flex;
     align-items: center;
@@ -210,6 +211,7 @@ h1.heading::after {
 }
 #projects .project {
     width: 80%;
+    margin: 4rem 0;
 }
 #projects .project .info {
     width: 60%;
@@ -219,16 +221,16 @@ h1.heading::after {
 }
 #projects .project .name {
     font-size: 2rem;
-    color: whitesmoke;
+    color: var(--foreground-color);
 }
 #projects .project .description {
-    color: #bdbdbd;
+    color: whitesmoke;
     margin-top: 5px;
 }
 #projects .project .features {
-    color: #bdbdbd;
+    color: whitesmoke;
     margin-left: 14px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #projects .project .features > li {
     margin: 8px 0px;
@@ -244,14 +246,47 @@ h1.heading::after {
 #projects .project .tech-stack .tech {
     display: flex;
     align-items: center;
-    border: 2px solid var(--contrast-color);
+    border: none;
     padding: 5px 15px;
     border-radius: 99px;
     color: whitesmoke;
     gap: 6px;
+    background: var(--contrast-color);
+    font-size: 0.9rem;
 }
 #projects .project .tech-stack .tech img {
     width: 20px;
+}
+#projects .project .info .links {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+#projects .project .info .links > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    background: transparent;
+    width: max-content;
+    padding: 5px 13px;
+
+    border-radius: 99px;
+    border: 2px solid var(--contrast-color);
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+#projects .project .info .links > a:hover {
+    background: #1d1d1d;
+}
+#projects .source-code-link {
+    color: whitesmoke;
+}
+#projects .hosted-link {
+    color: whitesmoke;
 }
 
 /*  FOOTER  */
