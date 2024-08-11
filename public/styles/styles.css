@@ -40,8 +40,6 @@ header {
   border-bottom-color: #242424;
 
   position: fixed;
-  top: 0;
-  left: 0;
 }
 
 .navbar .logo a {
@@ -160,5 +158,34 @@ header {
 }
 
 /*  SKILLS */
+#skills {
+  padding: 50px;
+  text-align: center;
+  margin: 10rem 0 2rem 0;
+  color: whitesmoke;
+}
+#skills h1 {
+  font-size: 3rem;
+}
+#skills .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+#skills .skills-list .skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  margin: 10px;
+  background: var(--contrast-color);
+  padding: 8px 20px;
+  border-radius: 99px;
+}
+#skills .skills-list .skill img {
+  width: 40px;
+}
+
 /*  PROJECTS  */
 /*  FOOTER  */
