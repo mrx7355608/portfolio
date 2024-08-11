@@ -147,6 +147,7 @@ header {
   text-align: center;
   color: var(--contrast-color);
   padding: 50px;
+  margin-bottom: 15rem;
 }
 #about h1 {
   font-size: 2.3rem;
@@ -158,22 +159,34 @@ header {
 }
 
 /*  SKILLS */
-#skills {
-  padding: 50px;
-  text-align: center;
-  margin: 10rem 0 2rem 0;
-  color: whitesmoke;
-}
-#skills h1 {
+h1.heading {
   font-size: 3rem;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 10rem;
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
 }
-#skills .skills-list {
+h1.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  width: 20px;
+  height: 5px;
+  background: var(--foreground-color);
+  text-align: center;
+}
+#skills {
+  padding: 30px 90px;
+  text-align: center;
+  color: whitesmoke;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 2.5rem 0;
 }
-#skills .skills-list .skill {
+#skills .skill {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -183,9 +196,62 @@ header {
   padding: 8px 20px;
   border-radius: 99px;
 }
-#skills .skills-list .skill img {
+#skills .skill img {
   width: 40px;
 }
 
 /*  PROJECTS  */
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#projects .project {
+  width: 80%;
+}
+#projects .project .info {
+  width: 60%;
+}
+#projects .project .images {
+  width: 40%;
+}
+#projects .project .name {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+#projects .project .description {
+  color: #bdbdbd;
+  margin-top: 5px;
+}
+#projects .project .features {
+  color: #bdbdbd;
+  margin-left: 14px;
+  margin-top: 10px;
+}
+#projects .project .features > li {
+  margin: 8px 0px;
+}
+#projects .project .tech-stack {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #bdbdbd;
+  margin: 20px 0px;
+}
+#projects .project .tech-stack .tech {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--contrast-color);
+  padding: 5px 15px;
+  border-radius: 99px;
+  color: whitesmoke;
+  gap: 6px;
+}
+#projects .project .tech-stack .tech img {
+  width: 20px;
+}
+
 /*  FOOTER  */
