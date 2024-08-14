@@ -79,6 +79,8 @@ header {
     border-radius: 99px;
     border: 2px solid var(--foreground-color);
     outline: none;
+    text-decoration: none;
+    font-size: 0.85rem;
 
     transition: 0.2s ease-out;
 }
@@ -133,6 +135,8 @@ header {
     padding: 0.4rem 1rem;
     color: var(--contrast-color);
     transition: 0.1s ease-in;
+    text-decoration: none;
+    font-size: 0.9rem;
 
     cursor: pointer;
 }
