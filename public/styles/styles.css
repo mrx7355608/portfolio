@@ -144,6 +144,9 @@ header {
 
 /*  ABOUT  */
 #about {
+    padding-top: 100px;
+}
+.about-content {
     background: var(--foreground-color);
     text-align: center;
     color: var(--contrast-color);
@@ -165,10 +168,10 @@ h1.heading {
     font-size: 3rem;
     text-align: center;
     color: whitesmoke;
-    margin-top: 10rem;
     position: relative;
     width: max-content;
-    margin: 5rem auto 0 auto;
+    margin: auto;
+    padding-top: 120px;
 }
 h1.heading::after {
     content: "";
@@ -179,7 +182,7 @@ h1.heading::after {
     background: var(--foreground-color);
     text-align: center;
 }
-#skills {
+#skills .skills-list {
     padding: 30px 90px;
     text-align: center;
     color: whitesmoke;
@@ -204,7 +207,7 @@ h1.heading::after {
 /* ######################################## */
 
 /*  PROJECTS  */
-#projects {
+#projects .projects-list {
     display: flex;
     align-items: center;
     justify-content: center;
