@@ -27,14 +27,14 @@ header {
 
 .navbar {
     width: 100%;
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
     z-index: 2;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -155,7 +155,7 @@ header {
     text-align: center;
     color: var(--contrast-color);
     padding: 50px;
-    margin-bottom: 11rem;
+    margin-bottom: 6rem;
 }
 #about h1 {
     font-size: 2.3rem;
@@ -216,11 +216,11 @@ h1.heading::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
+    margin-bottom: 5rem;
 }
 #projects .project {
     width: 80%;
-    margin: 3rem 0 5rem 0;
 }
 #projects .project .info {
     width: 60%;
