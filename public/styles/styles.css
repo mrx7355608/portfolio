@@ -22,7 +22,11 @@ html {
 
 /*  NAVBAR  */
 header {
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .navbar {
@@ -30,7 +34,6 @@ header {
     padding: 1rem 2rem;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-    z-index: 2;
 
     display: flex;
     align-items: center;
@@ -39,17 +42,16 @@ header {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #242424;
-
-    position: fixed;
 }
-
 .navbar .logo a {
     color: var(--foreground-color);
     font-size: 2.4rem;
     font-style: italic;
     text-decoration: none;
 }
-
+.mobile-menu {
+    display: none;
+}
 .navlinks {
     list-style: none;
 }
@@ -380,3 +382,91 @@ footer a {
     font-weight: 500;
 }
 /* ######################################## */
+
+/*  ========== */
+/*  RESPONSIVE */
+/*  ========== */
+@media screen and (max-width: 950px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem;
+        gap: 9px;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #242424;
+        font-size: 0.9rem;
+        list-style: none;
+    }
+    .download-resume-button {
+        font-size: 0.8rem;
+    }
+    .mobile-menu > li > a {
+        color: #eee;
+        transition: 0.2s ease-out;
+        text-decoration: none;
+        list-style: none;
+    }
+    .mobile-menu > li > a:hover {
+        color: var(--foreground-color);
+    }
+    .navlinks {
+        display: none;
+    }
+    .navbar {
+        justify-content: space-between;
+        padding: 0.5rem 4rem;
+    }
+
+    #intro {
+        padding: 1.3rem;
+    }
+
+    #intro h1 {
+        font-size: 1.8rem;
+    }
+
+    #intro h1.name {
+        font-size: 3rem;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 0.92rem;
+        margin: 10px auto;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #about h1 {
+        font-size: 1.7rem;
+    }
+
+    #skills .skills-list {
+        padding: 10px;
+    }
+    #skills .skill {
+        padding: 8px 15px;
+        margin: 5px;
+    }
+    #skills .skill img {
+        width: 20px;
+    }
+    #skills .skill span {
+        font-size: 0.9rem;
+    }
+    h1.heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
