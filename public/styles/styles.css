@@ -348,11 +348,15 @@ footer a {
         border-bottom-style: solid;
         border-bottom-width: 1px;
         border-bottom-color: #242424;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         list-style: none;
     }
     .download-resume-button {
         font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    .navbar .logo a {
+        font-size: 2.2rem;
     }
     .mobile-menu > li > a {
         color: #eee;
@@ -368,19 +372,38 @@ footer a {
     }
     .navbar {
         justify-content: space-between;
-        padding: 0.5rem 4rem;
+        padding: 0.5rem 1.8rem;
     }
 
+    #intro #download-resume-button-2 {
+        background: var(--foreground-color);
+        border: none;
+        outline: none;
+        border-radius: 99px;
+
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        font-weight: 500;
+        padding: 0.4rem 1rem;
+        color: var(--contrast-color);
+        transition: 0.1s ease-in;
+        text-decoration: none;
+        font-size: 0.8rem;
+
+        cursor: pointer;
+    }
     #intro {
         padding: 1.3rem;
     }
 
     #intro h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     #intro h1.name {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #about p {
@@ -412,7 +435,7 @@ footer a {
         font-size: 0.9rem;
     }
     h1.heading {
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin-bottom: 1rem;
     }
     #projects .projects-list {
