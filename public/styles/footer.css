@@ -9,3 +9,9 @@ footer a {
     color: whitesmoke;
     font-weight: 500;
 }
+
+@media screen and (max-width: 950px) {
+    footer {
+        font-size: 0.9rem;
+    }
+}
