@@ -1,0 +1,35 @@
+#about {
+    padding-top: 100px;
+}
+.about-content {
+    background: var(--foreground-color);
+    text-align: center;
+    color: var(--contrast-color);
+    padding: 50px;
+    margin-bottom: 6rem;
+}
+#about h1 {
+    font-size: 2.3rem;
+}
+#about p {
+    font-size: 1.1rem;
+    width: 60vw;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 950px) {
+    #about p {
+        width: 100%;
+        font-size: 0.92rem;
+        margin: 10px auto;
+    }
+
+    .about-content {
+        padding: 3rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+}
